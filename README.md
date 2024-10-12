@@ -15,6 +15,7 @@ This project implements the Harrison method to visualize different branches of t
 3. Adjust the **branch_index** variable to visualize the desired Fermi surface branch.
 
    Here is an example out put:
+
    ![Fermi Surface](images/fermi_surface_example.png)
 
 5. You can also use my idea and do other changes to get the Fermi surface of other 2D structures.
