@@ -89,7 +89,7 @@ def plot_fermi_surface(X, Y, Z,branch_index,r,num_valence_electron):
         plt.axhline(y=y, color='gray', linestyle='--', linewidth=0.5)
 
     # Set the title and labels for the plot
-    plt.title(f"Fermi Surface Plot (branch index = {branch_index})")
+    plt.title(f"Fermi Surface Plot (branch index = {branch_index},  num_valence_electron = {num_valence_electron},  r = {r:.2f})")
     plt.xlabel('kx-axis')
     plt.ylabel('ky-axis')
     plt.legend()
@@ -102,7 +102,7 @@ def main():
     """
     num_valence_electron = 12  # The number of valence electrons per unit cell
     r = np.sqrt(num_valence_electron / (2 * np.pi))  # Calculate the Fermi radius based on the Harrison method
-    print(f"Calculated Fermi radius r = {r:.4f} based on the number of valence electrons {num_valence_electron}")
+    #print(f"Calculated Fermi radius r = {r:.4f} based on the number of valence electrons {num_valence_electron}")
     
     #point_list = calculate_point_range(r)  # Calculate the range of points to consider
     
